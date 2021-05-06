@@ -1,0 +1,256 @@
+/* MAIN HANDLEBAR */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+}
+
+#main {
+    flex-grow: 1;
+}
+
+footer {
+    font-size: 10px;
+    display: flex;
+    justify-content: left;
+    margin-top: 10px;
+}
+
+.error {
+    color: rgb(153, 24, 24);
+    font-weight: bold;
+}
+
+button {
+    background-color: rgb(77, 88, 83);
+    box-shadow: none;
+    border-radius: 20px;
+    border: 0px;
+    color: white;
+    padding: 5px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+}
+
+/* REGISTRATION */
+
+#welcome {
+    position: relative;
+    width: 450px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* transform: translate(70%, 0%); */
+}
+
+#welcomeimg {
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    object-fit: cover;
+}
+
+.texts {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.registration-flex-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.registration-flex-child {
+    width: 40%;
+    margin-right: 0px;
+    justify-content: center;
+}
+
+.registration-flex-child:first-child {
+    border: 5px solid #fdfdfd;
+    padding: 10px;
+}
+
+#fertilizerimg {
+    width: 150px;
+    height: 150px;
+}
+
+.login {
+    border: 5px solid #fdfdfd;
+    padding: 10px;
+}
+
+/* PROFILE */
+
+.profilemessage {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.profile {
+    flex-direction: column;
+    display: flex;
+    border: 5px solid #fdfdfd;
+    padding: 10px;
+    width: 300px;
+}
+
+#basketimg {
+    opacity: 0.7;
+    object-fit: cover;
+    width: 600px;
+    height: 600px;
+    transform: translate(120%, 0);
+}
+
+.tellus {
+    display: flex;
+}
+
+.addprofile {
+    z-index: 1;
+}
+
+/* PETITION */
+
+.signature {
+    width: 450px;
+    /* flex-direction: column;
+    display: flex; */
+    /* transform: translate(20%, 10%); */
+    justify-content: space-around;
+    display: inline-block;
+    margin-left: 10%;
+}
+
+#toolsimg {
+    /* display: flex;
+    flex-direction: column; */
+    /* transform: translate(70%, 0%); */
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+}
+
+canvas {
+    background-color: rgb(88, 151, 88);
+    border: 1px solid white;
+    flex: 0 0 200px;
+    width: 400px;
+}
+
+input,
+button,
+canvas {
+    display: block;
+    font-size: 24px;
+    padding: 8px;
+    margin: 24px 0;
+}
+
+/* THANKS PAGE */
+
+.thanks {
+    border: 5px solid #fdfdfd;
+    padding: 10px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.count {
+    display: inline-block;
+    padding: 10px;
+    margin-left: 5%;
+    margin-top: 5%;
+    align-content: center;
+    background-color: rgb(136, 185, 136);
+}
+
+.linkprofile {
+    display: inline-block;
+    margin-left: 10%;
+    padding: 10px;
+    background-color: rgb(117, 91, 91);
+}
+
+/* SIGNERS LIST */
+
+.signers {
+    border: 5px solid #fdfdfd;
+    padding: 10px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+#giesskanneimg {
+    width: 200px;
+    height: 200px;
+}
+
+.listsigners {
+    display: flex;
+}
+
+/* EDIT PROFILE */
+
+.editprofile {
+    border: 5px solid #fdfdfd;
+    padding: 10px;
+    width: 400px;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+#glovesimg {
+    align-self: center;
+}
+
+.profileandimage {
+    display: flex;
+}
+
+/* LOGIN */
+
+#seedsimg {
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+}
+
+.login {
+    border: 5px solid #fdfdfd;
+    padding: 10px;
+    width: 400px;
+    margin-top: 5%;
+    margin-left: 5%;
+    display: inline-block;
+}

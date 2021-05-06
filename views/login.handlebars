@@ -1,0 +1,17 @@
+<form method="POST" action="/login">
+    {{#if error}}
+    <p class="error">Oh oh, an error has occurred!</p>
+    {{/if}}
+        <img id="seedsimg" src="seeds.png">
+    <div class="login">
+        <label>Email</label>
+        <input type="text" name="email" autocomplete="off" />
+
+        <label>Password</label>
+        <input type="password" name="password" />
+        
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+
+        <button name="login">Log in</button>
+    </div>
+</form>

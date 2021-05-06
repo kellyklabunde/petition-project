@@ -1,0 +1,36 @@
+<form method="POST" action="/profile/edit">
+    {{#if error}}
+    <p class="error">Oh oh, an error has occurred!</p>
+    {{/if}}
+    <div class="profileandimage">
+        <div class="editprofile">
+            <label>First name</label>
+            <input type="text" name="first" value="{{first}}" autocomplete="off" />
+
+            <label>Last name</label>
+            <input type="text" name="last" value="{{last}}" autocomplete="off" />
+
+            <label>Email</label>
+            <input type="text" name="email" value="{{email}}" autocomplete="off" />
+
+            <label>Password</label>
+            <input type="password" name="password" value="" />
+
+            <label>age:</label>
+            <input type="text" name="age" value="{{age}}" autocomplete="off" />
+
+            <label>city:</label>
+            <input type="text" name="city" value="{{city}}" autocomplete="off" />
+
+            <label>url:</label>
+            <input type="url" name="url" value="{{url}}" pattern="https?://.+" title="Include http://" autocomplete="off" />
+            
+            <input type="hidden" name="_csrf" value="{{csrfToken}}">
+
+            <button name="addInfo">Save</button>
+        </div>
+        <div id="glovesimg">
+            <img src="/gloves.png">
+        </div>
+    </div>
+</form>
