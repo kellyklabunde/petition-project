@@ -25,6 +25,7 @@ footer {
     display: flex;
     justify-content: left;
     margin-top: 10px;
+    margin-bottom: 3px;
 }
 
 .error {
@@ -43,6 +44,20 @@ button {
         "Lucida Sans", Arial, sans-serif;
 }
 
+input,
+button,
+canvas {
+    display: block;
+    font-size: 24px;
+    padding: 8px;
+    margin: 10px 0;
+}
+
+label {
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 /* REGISTRATION */
 
 #welcome {
@@ -53,13 +68,12 @@ button {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    /* transform: translate(70%, 0%); */
 }
 
 #welcomeimg {
     width: 100%;
     height: 100%;
-    opacity: 0.7;
+    opacity: 0.5;
     object-fit: cover;
 }
 
@@ -71,9 +85,29 @@ button {
     transform: translate(-50%, -50%);
     z-index: 1;
     text-align: center;
-    font-size: 35px;
+    font-size: 50px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
+}
+
+.texts p {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.please-sign {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.please-sign p {
+    margin-top: auto;
+    margin-bottom: 20px;
 }
 
 .registration-flex-container {
@@ -82,14 +116,18 @@ button {
 }
 
 .registration-flex-child {
-    width: 40%;
-    margin-right: 0px;
-    justify-content: center;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
 }
 
 .registration-flex-child:first-child {
     border: 5px solid #fdfdfd;
-    padding: 10px;
+    padding: 5px;
+}
+
+.registration-flex-child input {
+    width: 300px;
 }
 
 #fertilizerimg {
@@ -161,15 +199,6 @@ canvas {
     border: 1px solid white;
     flex: 0 0 200px;
     width: 400px;
-}
-
-input,
-button,
-canvas {
-    display: block;
-    font-size: 24px;
-    padding: 8px;
-    margin: 24px 0;
 }
 
 /* THANKS PAGE */
