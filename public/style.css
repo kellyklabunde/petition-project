@@ -263,15 +263,50 @@ canvas {
 /* THANKS PAGE */
 
 .thanks {
-    border: 5px solid #fdfdfd;
-    padding: 10px;
-    width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.count {
+.thanks p {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+}
+
+.show-signature {
+    display: flex;
+    border: 5px solid #fdfdfd;
+    background-color: rgb(156, 201, 156);
+    padding: 10px;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-signature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.thanks button {
+    width: 200px;
+    display: flex;
+}
+
+.count p {
+    font-size: 20px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+}
+
+/* .count {
     display: inline-block;
     padding: 10px;
     margin-left: 5%;
@@ -285,7 +320,7 @@ canvas {
     margin-left: 10%;
     padding: 10px;
     background-color: rgb(117, 91, 91);
-}
+} */
 
 /* SIGNERS LIST */
 

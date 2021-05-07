@@ -1,16 +1,19 @@
+
 <form method="POST" action="/thanks">
     <div class="thanks">
-        <p>Thank you for signing our petition!</p>
-        <img src="{{signature}}" />
-        <button name="deleteSig" type="submit">Delete Signature</button>
-    </div>
-    <div class="count">
-        <p>Already {{count}} people have signed our petition.</p>
-        <a href="/signers">View the list.</a>
-    </div>
-    <div class="linkprofile">
-        <a href="/profile/edit">Edit my profile</a>
-    </div>
-        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+        <div class="view-signature">
+            <p>Thank you for signing our petition!</p>
+            <img class="show-signature" src="{{signature}}" />
+            <button name="deleteSig" type="submit">Delete Signature</button>
+        </div>
+        <div class="count">
+            <p>Already {{count}} people have signed our petition.</p>
+            <a href="/signers">View the list.</a>
+        </div>
+        <div class="linkprofile">
+            <a href="/profile/edit">Edit my profile</a>
+        </div>
+            <input type="hidden" name="_csrf" value="{{csrfToken}}">
+        </div>
     </div>
 </form>
