@@ -183,10 +183,9 @@ label {
 /* PROFILE */
 
 .profilemessage {
-    font-size: 20px;
-    font-weight: bold;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
 }
 
 .profile {
@@ -194,7 +193,28 @@ label {
     display: flex;
     border: 5px solid #fdfdfd;
     padding: 10px;
-    width: 300px;
+    width: 550px;
+}
+
+.addprofile {
+    margin-left: 30%;
+    position: absolute;
+}
+
+.profile input {
+    width: 500px;
+    font-size: 25px;
+    margin: 5px;
+    justify-content: center;
+}
+
+.profile button {
+    width: 150px;
+    margin-left: 5px;
+}
+
+.profile label {
+    margin-left: 5px;
 }
 
 #basketimg {
@@ -202,11 +222,12 @@ label {
     object-fit: cover;
     width: 600px;
     height: 600px;
-    transform: translate(120%, 0);
+    margin-left: 40%;
 }
 
 .tellus {
     display: flex;
+    align-items: center;
 }
 
 .addprofile {
@@ -215,30 +236,29 @@ label {
 
 /* PETITION */
 
-.signature {
-    width: 450px;
-    /* flex-direction: column;
-    display: flex; */
-    /* transform: translate(20%, 10%); */
-    justify-content: space-around;
-    display: inline-block;
-    margin-left: 10%;
+.signature-container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
 }
 
-#toolsimg {
-    /* display: flex;
-    flex-direction: column; */
-    /* transform: translate(70%, 0%); */
-    height: 50px;
-    width: 50px;
-    display: inline-block;
+.signature label {
+    font-size: 30px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+}
+
+.toolsimg {
+    height: 450px;
 }
 
 canvas {
     background-color: rgb(88, 151, 88);
     border: 1px solid white;
-    flex: 0 0 200px;
-    width: 400px;
+    height: 200px;
+    width: 500px;
+    margin-top: 20px;
 }
 
 /* THANKS PAGE */

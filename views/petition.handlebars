@@ -2,17 +2,17 @@
     {{#if error}}
     <p class="error">Oh oh, an error has occurred!</p>
     {{/if}}
-    <div class="signature">
-        <label>Just one more step! Please sign bellow:</label>
-        <canvas width="400" height="200"></canvas>
-        <input type="hidden" name="signature" value="{{csrfToken}}">
-        
-        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <div class="signature-container">
+        <div>
+            <label>Just one more step! Please sign bellow:</label>
+            <canvas width="400" height="200"></canvas>
+            <input type="hidden" name="signature" value="{{csrfToken}}">
+            
+            <input type="hidden" name="_csrf" value="{{csrfToken}}">
 
-        <button name="submit">Submit</button>
-    </div>
-    <div id="toolsimg">
-        <img src="tools.png">
+            <button name="submit">Submit</button>
+        </div>
+        <img class="toolsimg" src="tools.png">
     </div>
 </form>
 

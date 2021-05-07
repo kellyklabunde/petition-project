@@ -9,7 +9,7 @@ if (canvas) {
     let isDrawing = false;
 
     canvas.addEventListener("mousedown", function (event) {
-        console.log("mouse down");
+        console.log("mousedown");
         ctx.beginPath();
         ctx.moveTo(event.layerX, event.layerY);
         isDrawing = true;
