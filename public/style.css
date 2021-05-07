@@ -44,7 +44,6 @@ button {
         "Lucida Sans", Arial, sans-serif;
 }
 
-input,
 button,
 canvas {
     display: block;
@@ -55,7 +54,8 @@ canvas {
 
 label {
     font-size: 25px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
 }
 
 /* REGISTRATION */
@@ -85,9 +85,9 @@ label {
     transform: translate(-50%, -50%);
     z-index: 1;
     text-align: center;
-    font-size: 50px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 43px;
     font-weight: bold;
+    font-family: "Goblin One", cursive;
 }
 
 .texts p {
@@ -102,7 +102,6 @@ label {
     text-align: center;
     font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
 }
 
 .please-sign p {
@@ -112,22 +111,33 @@ label {
 
 .registration-flex-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 }
 
-.registration-flex-child {
+.registration {
     width: 400px;
     display: flex;
     flex-direction: column;
-}
-
-.registration-flex-child:first-child {
     border: 5px solid #fdfdfd;
     padding: 5px;
+    margin-right: 10%;
 }
 
-.registration-flex-child input {
+.registration input {
     width: 300px;
+    font-size: 25px;
+    margin: 5px;
+    justify-content: center;
+}
+
+.registration button {
+    width: 150px;
+    margin-left: 5px;
+}
+
+.registration label {
+    margin-left: 5px;
 }
 
 #fertilizerimg {
@@ -138,6 +148,36 @@ label {
 .login {
     border: 5px solid #fdfdfd;
     padding: 10px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login p {
+    font-size: 25px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+}
+
+.login-link {
+    display: flex;
+    align-items: center;
+}
+
+.login a {
+    font-size: 25px;
+    text-decoration: none;
+    background-color: rgb(77, 88, 83);
+    box-shadow: none;
+    border-radius: 20px;
+    border: 0px;
+    color: white;
+    padding: 5px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    width: 150px;
+    text-align: center;
 }
 
 /* PROFILE */
@@ -274,7 +314,7 @@ canvas {
     height: 300px;
     width: 300px;
 }
-
+/* 
 .login {
     border: 5px solid #fdfdfd;
     padding: 10px;
@@ -282,4 +322,4 @@ canvas {
     margin-top: 5%;
     margin-left: 5%;
     display: inline-block;
-}
+} */

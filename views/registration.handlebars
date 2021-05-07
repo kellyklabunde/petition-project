@@ -12,26 +12,26 @@
                 <p>Please register to sign our petition:</p>
             </div> 
     <div class="registration-flex-container">
-        <div class="registration-flex-child">
-        <label>First name </label>
-        <input type="text" name="first" autocomplete="off" />
+        <div class="registration">
+            <label>First name </label>
+            <input type="text" name="first" autocomplete="off" />
 
-        <label>Last name</label>
-        <input type="text" name="last" autocomplete="off" />
+            <label>Last name</label>
+            <input type="text" name="last" autocomplete="off" />
 
-        <label>Email</label>
-        <input type="text" name="email" autocomplete="off" />
+            <label>Email</label>
+            <input type="text" name="email" autocomplete="off" />
 
-        <label>Password</label>
-        <input type="password" name="password" />
-    
-        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+            <label>Password</label>
+            <input type="password" name="password" />
+        
+            <input type="hidden" name="_csrf" value="{{csrfToken}}">
 
-        <button name="signin">Sign in</button>
+            <button name="signin">Sign in</button>
         </div>
-        <div class="registration-flex-child">
-            <div class="login">
-                <p>Already a member? Please log in:</p>
+        <div class="login">
+            <p>Already a member? Please log in:</p>
+            <div class="login-link">
                 <a href="/login">Log in</a>
                 <img id="fertilizerimg" src="fertilizer.png">
             </div>
