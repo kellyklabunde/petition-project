@@ -5,7 +5,7 @@ const ctx = canvas.getContext("2d");
 
 if (canvas) {
     console.log(canvas);
-    ctx.strokeStyle = "black";
+    ctx.strokeStyle = "white";
     let isDrawing = false;
 
     canvas.addEventListener("mousedown", function (event) {
