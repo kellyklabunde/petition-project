@@ -2,6 +2,9 @@
     {{#if error}}
     <p class="error">Oh oh, an error has occurred!</p>
     {{/if}}
+    <div class="menu-buttons">
+        <a href="/logout">Log out</a>
+    </div>
     <div class="tellus">
         <div class="addprofile">
             <div class="profilemessage">
@@ -18,7 +21,6 @@
                 <input type="url" name="url" pattern="https?://.+" title="Include http://" autocomplete="off" />
                 
                 <input type="hidden" name="_csrf" value="{{csrfToken}}">
-
 
                 <button name="addInfo">Save</button>
             </div>  

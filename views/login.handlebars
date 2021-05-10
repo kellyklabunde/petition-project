@@ -2,16 +2,21 @@
     {{#if error}}
     <p class="error">Oh oh, an error has occurred!</p>
     {{/if}}
+    <div class="login-page">
         <img id="seedsimg" src="seeds.png">
-    <div class="login">
-        <label>Email</label>
-        <input type="text" name="email" autocomplete="off" />
+        <div class="login-box">
+            <label>Email</label>
+            <input type="text" name="email" autocomplete="off" />
 
-        <label>Password</label>
-        <input type="password" name="password" />
-        
-        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+            <label>Password</label>
+            <input type="password" name="password" />
+            
+            <input type="hidden" name="_csrf" value="{{csrfToken}}">
 
-        <button name="login">Log in</button>
+            <button name="login">Log in</button>
+        </div>
+    </div>
+    <div class="back-button">
+        <a href="/registration">Back</a>
     </div>
 </form>
