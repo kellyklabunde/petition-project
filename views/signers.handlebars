@@ -1,14 +1,18 @@
 <div class="signers">
-    <p>Our comunity is growing! We already have a total of {{count}} Signers</p>
+    <div class="signers-container">
+        <div class="signers-txt">
+            <p>Our comunity is growing! We already have a total of {{count}} Signers!</p>
 
-    <p>Click in a city to check the supporters from that location!</p>
-        <div class="listsigners">
+            <p>Click in a city to check the supporters from that location.</p>
+        </div>
+        <img id="giesskanneimg" src="/giesskanne.png">
+    </div>
+    <div class="listsigners">
         <ul>
             {{#each signers}}      
             <li>{{first}} {{last}} {{age}} <a href="/signers/{{city}}">{{city}}</a> <a href="{{url}}">{{url}}</a> </li>
             {{/each}}
         </ul>
-        <img id="giesskanneimg" src="/giesskanne.png">
     </div>
 </div>
 {{!-- <div id="giesskanneimg"> --}}

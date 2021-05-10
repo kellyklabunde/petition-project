@@ -288,7 +288,6 @@ canvas {
 .view-signature {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
 }
 
 .view-signature button {
@@ -301,7 +300,6 @@ canvas {
     font-size: 30px;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
         "Lucida Sans", Arial, sans-serif;
-    justify-content: flex-start;
     margin-right: auto;
     margin-left: auto;
 }
@@ -333,22 +331,56 @@ canvas {
 /* SIGNERS LIST */
 
 .signers {
-    border: 5px solid #fdfdfd;
-    padding: 10px;
-    width: 700px;
-    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signers-container {
+    display: flex;
     margin-right: auto;
-    margin-top: 10px;
-    line-height: 1.6;
+    margin-left: auto;
+}
+
+.signers-txt {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    /* margin-right: auto;
+    margin-left: auto; */
+    margin-top: 10%;
 }
 
 #giesskanneimg {
     width: 200px;
     height: 200px;
+    /* margin-right: 10%; */
+    margin-top: 10%;
+    margin-left: 30px;
 }
 
 .listsigners {
     display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+}
+
+.listsigners ul {
+    display: flex;
+    flex-direction: column;
+    width: 100vh;
+}
+
+.listsigners a {
+    text-decoration: none;
+    color: black;
 }
 
 /* EDIT PROFILE */
