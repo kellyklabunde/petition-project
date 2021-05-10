@@ -265,7 +265,6 @@ canvas {
 .thanks {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .thanks p {
@@ -277,7 +276,6 @@ canvas {
 }
 
 .show-signature {
-    display: flex;
     border: 5px solid #fdfdfd;
     background-color: rgb(156, 201, 156);
     padding: 10px;
@@ -285,42 +283,52 @@ canvas {
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    justify-content: center;
-    align-items: center;
 }
 
 .view-signature {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
-.thanks button {
+.view-signature button {
     width: 200px;
-    display: flex;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .count p {
-    font-size: 20px;
+    font-size: 30px;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
         "Lucida Sans", Arial, sans-serif;
+    justify-content: flex-start;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-/* .count {
-    display: inline-block;
-    padding: 10px;
-    margin-left: 5%;
-    margin-top: 5%;
+.count a {
+    font-size: 25px;
+    text-decoration: none;
+    background-color: rgb(77, 88, 83);
+    box-shadow: none;
+    border-radius: 20px;
+    border: 0px;
+    color: white;
+    padding: 5px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.count {
+    display: flex;
+    flex-direction: column;
     align-content: center;
-    background-color: rgb(136, 185, 136);
 }
-
-.linkprofile {
-    display: inline-block;
-    margin-left: 10%;
-    padding: 10px;
-    background-color: rgb(117, 91, 91);
-} */
 
 /* SIGNERS LIST */
 
