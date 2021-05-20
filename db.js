@@ -114,3 +114,7 @@ module.exports.updateProfile = (age, city, url, user_id) => {
         [age === "" ? null : age, city, url, user_id]
     );
 };
+
+module.exports.checkIfSigned = (user_id) => {
+    return db.query("SELECT * FROM signatures WHERE user_id = $1", [user_id]);
+};

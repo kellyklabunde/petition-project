@@ -90,24 +90,28 @@ app.get("/login", (req, res) => {
 });
 
 app.post("/login", (req, res) => {
-    console.log("here");
-    console.log(req.body.email);
-
     db.checkEmail(req.body.email).then((result) => {
-        console.log("here");
-        console.log(req.body.email);
         if (result.rows[0]) {
-            console.log(result.rows);
             const hashFromDb = result.rows[0].hash;
-            console.log(hashFromDb);
             bcrypt.compare(req.body.password, hashFromDb).then((match) => {
                 console.log("match", match);
-                if (match) {
-                    if (result.rows[0].signature) {
-                        req.session.signatureId = result.rows[0].signatureid;
-                    }
+                if (typeof result.rows[0] != "undefined") {
                     req.session.userId = result.rows[0].id;
-                    res.redirect("/petition");
+                }
+                if (match) {
+                    db.checkIfSigned(result.rows[0].id).then(({ rows }) => {
+                        console.log(typeof rows[0]);
+                        const signcheck = "";
+                        if (typeof rows[0] != "undefined") {
+                            req.session.signatureId = rows[0].id;
+                            signcheck = rows[0].signature;
+                        }
+                        if (signcheck == "undefined") {
+                            res.redirect("/petition");
+                        } else {
+                            res.redirect("/thanks");
+                        }
+                    });
                 } else {
                     res.render("login", {
                         layout: "main",
@@ -241,6 +245,7 @@ app.get("/petition", (req, res) => {
 
 app.post("/petition", (req, res) => {
     console.log(req.session.userId);
+    console.log(req.body);
     db.addSignature(req.body.signature, req.session.userId)
         .then((result) => {
             console.log("signature added with id: ", result.rows[0].id);
