@@ -100,16 +100,14 @@ app.post("/login", (req, res) => {
                 }
                 if (match) {
                     db.checkIfSigned(result.rows[0].id).then(({ rows }) => {
-                        console.log(typeof rows[0]);
-                        const signcheck = "";
-                        if (typeof rows[0] != "undefined") {
+                        try {
+                            let signCheck = "";
                             req.session.signatureId = rows[0].id;
-                            signcheck = rows[0].signature;
-                        }
-                        if (signcheck == "undefined") {
-                            res.redirect("/petition");
-                        } else {
+                            signCheck = rows[0].signature;
                             res.redirect("/thanks");
+                        } catch (e) {
+                            console.log(e);
+                            res.redirect("/petition");
                         }
                     });
                 } else {

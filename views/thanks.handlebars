@@ -1,6 +1,8 @@
-
 <form method="POST" action="/thanks">
     <div class="thanks">
+        <div class="menu-buttons">
+            <a href="/logout">Log out</a>
+        </div>
         <div class="view-signature">
             <p>Thank you for signing our petition!</p>
             <img class="show-signature" src="{{signature}}" />
@@ -11,8 +13,8 @@
             <a href="/signers">View the list</a>
             <a href="/profile/edit">Edit my profile</a>
         </div>
-    
-            <input type="hidden" name="_csrf" value="{{csrfToken}}">
-      
+
+        <input type="hidden" name="_csrf" value="{{csrfToken}}" />
+
     </div>
 </form>

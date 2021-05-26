@@ -1,16 +1,13 @@
 <form method="POST" action="/profile">
     {{#if error}}
-    <p class="error">Oh oh, an error has occurred!</p>
+        <p class="error">Oh oh, an error has occurred!</p>
     {{/if}}
-    <div class="menu-buttons">
-        <a href="/logout">Log out</a>
-    </div>
     <div class="tellus">
         <div class="addprofile">
             <div class="profilemessage">
                 <p>Tell us more about you:</p>
             </div>
-            <div class="profile"> 
+            <div class="profile">
                 <label>Enter your age (optional):</label>
                 <input type="text" name="age" autocomplete="off" />
 
@@ -18,13 +15,19 @@
                 <input type="text" name="city" autocomplete="off" />
 
                 <label>Enter your url (optional):</label>
-                <input type="url" name="url" pattern="https?://.+" title="Include http://" autocomplete="off" />
-                
-                <input type="hidden" name="_csrf" value="{{csrfToken}}">
+                <input
+                    type="url"
+                    name="url"
+                    pattern="https?://.+"
+                    title="Include http://"
+                    autocomplete="off"
+                />
+
+                <input type="hidden" name="_csrf" value="{{csrfToken}}" />
 
                 <button name="addInfo">Save</button>
-            </div>  
+            </div>
         </div>
-        <img id="basketimg" src="basket.png">
+        <img id="basketimg" src="basket.png" />
     </div>
 </form>
